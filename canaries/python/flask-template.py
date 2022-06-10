@@ -26,7 +26,7 @@ def error4(e):
         <h1>Oops! That page doesn't exist.</h1>
         <h3>
 """
-    template += request.url
+    template   +=   request.url # This is dangerous !!!
     template += """
 </h3>
 </div>
