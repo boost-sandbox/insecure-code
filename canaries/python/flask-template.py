@@ -19,7 +19,7 @@ def error(e):
 
 @app.route("/error4")
 def error4(e):
-    template222 = """
+    template222 = """ # noboost 
 {  extends "layout.html"  }
 {  block body  }
     <div class="center-content error">
