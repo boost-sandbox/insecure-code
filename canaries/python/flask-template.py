@@ -19,7 +19,7 @@ def error(e):
 
 @app.route("/error4")
 def error4(e):
-    template = """
+    template222 = """
 {  extends "layout.html"  }
 {  block body  }
     <div class="center-content error">
@@ -27,10 +27,10 @@ def error4(e):
         <h3>
 """
     
-    template +=   request.url # This is bad
-    template  +=    """
+    template222 +=   request.url # This is bad
+    template222  +=    """
 </h3>
 </div>
 {  endblock  }
 """ # lkjlkj
-    rendered = flask.render_template_string(template)
+    rendered = flask.render_template_string(template222)
