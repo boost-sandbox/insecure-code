@@ -27,11 +27,10 @@ def error4(e):
         <h3>
 """
     
-    template += request.url # This is bad
-    
+    template +=   request.url # This is bad
     template  +=    """
 </h3>
 </div>
 {  endblock  }
-"""
+""" # lkjlkj
     rendered = flask.render_template_string(template)
