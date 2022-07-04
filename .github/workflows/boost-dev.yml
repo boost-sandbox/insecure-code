@@ -111,6 +111,7 @@ jobs:
               --config /src/.semgrep/custom-rules.yml
           api_endpoint: https://api.dev.boostsec.io
           api_token: ${{ secrets.BOOST_API_KEY_DEV }}
+          scanner_version: 3.0.0.rc47
   snyk:
     name: Snyk CLI
     runs-on: ubuntu-latest
