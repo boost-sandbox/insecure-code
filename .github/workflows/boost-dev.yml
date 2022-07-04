@@ -49,6 +49,7 @@ jobs:
           additional_args: --pre-scan-command "/usr/local/bin/render-k8s.sh"
           api_endpoint: https://api.dev.boostsec.io
           api_token: ${{ secrets.BOOST_API_KEY_DEV }}
+          scanner_version: 3.0.0.rc47
   brakeman:
     name: Brakeman Scanner
     runs-on: ubuntu-latest
@@ -111,7 +112,6 @@ jobs:
               --config /src/.semgrep/custom-rules.yml
           api_endpoint: https://api.dev.boostsec.io
           api_token: ${{ secrets.BOOST_API_KEY_DEV }}
-          scanner_version: 3.0.0.rc47
   snyk:
     name: Snyk CLI
     runs-on: ubuntu-latest
