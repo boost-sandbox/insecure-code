@@ -24,7 +24,7 @@ def error4(e):
 {  extends "layout.html"  }
 {  block body  }
     <div class="center-content error">
-        <h1>Oops! That page doesn't exist.</h1>
+        <h1>Oops! That page doesn't exist. This is actual content</h1>
         <h3>
 """
     template4 += request.url
