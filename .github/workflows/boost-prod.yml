@@ -43,7 +43,7 @@ jobs:
       - name: Scanner
         uses: boostsecurityio/boostsec-scanner-github@v3
         env:
-          BOOST_LOG_LEVEL: ${{ github.event.inputs.logLevel }}
+          BOOST_LOG_LEVEL: DEBUG
         with:
           action: scan
           additional_args: --pre-scan-command "/usr/local/bin/render-k8s.sh"
