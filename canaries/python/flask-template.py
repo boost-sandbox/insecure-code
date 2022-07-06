@@ -20,17 +20,17 @@ def error(e):
 
 @app.route("/error4")
 def error4(e):
-    template4 = """ # noboost semgrep-python.flask.security.audit.render-template-string.render-template-string semgrep-python.flask.security.dangerous-template-string.dangerous-template-string
+    template5 = """
 {  extends "layout.html"  }
 {  block body  }
     <div class="center-content error">
         <h1>Oops! That page doesn't exist.</h1>
         <h3>
 """
-    template4 += request.url
-    template4  +=    """
+    template5 += request.url
+    template5  +=    """
 </h3>
 </div>
 {  endblock  }
 """
-    rendered = flask.render_template_string(template4)
+    rendered = flask.render_template_string(template5)
