@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "sandbox"
 version = "1.0.0"
-description = "something bad will happen"
+description = "something bad will happen kljlkj"
 authors = []
 packages = [{ include = "boostsec" }]
 include = ["sandbox/py.typed"]
